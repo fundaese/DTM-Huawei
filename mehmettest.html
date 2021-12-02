@@ -15,20 +15,29 @@
 <body>
     Mehmet Test Page
 
-    <script>
-        ((p,u,s,h)=>{
-             p._push={"apiKey":'8853958383354918'};
-             p._pushfcm = {
-               location:'ap1'
-             };
-              let l,y;
-              l = u.getElementsByTagName('head')[0];
-              y = u.createElement('script');
-              y.async = 1;
-              y.id="pushninja_script"
-              y.src = s+h;
-              l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/push/','push.min.js');
-      </script>
+    <span
+	style="visibility: hidden; display: inline-block;"
+	data-target-node-selector=".result-gh-61a898268d7cc717a6e9c07d"
+	data-gh-buy-now-button
+	data-gh-country-code="TR"
+	data-gh-mpn-code="HWD"
+	data-gh-ean-code=""
+	data-gh-configuration-id="61a898268d7cc717a6e9c07d"
+  >
+  Buy Now
+</span>
+<div class="result-gh-61a898268d7cc717a6e9c07d" data-gh-configuration-id="61a898268d7cc717a6e9c07d"></div>
+<script>
+(function (d, s, id) {
+  if (d.getElementById(id + s)) return;
+  var js, t = d.getElementsByTagName(s)[0];
+  js = d.createElement(s);
+  js.id = id + s;
+  js.onload = function() {HatchRequest.init()};
+  js.src = 'https://cdn.gethatch.com/hatch-buy-now-request-1.0.stable.js';
+  t.parentNode.insertBefore(js, t);
+}(document, 'script', 'hatch-buy-now-request-'));
+</script>
 
     <!--
         <script src="https://buybox.click/js/widget.min.js"></script>
