@@ -13,16 +13,60 @@
 </head>
 
 <body>
-    Mehmet page!!
+    Mehmet Test Page
 
-    <script src="https://buybox.click/js/widget.min.js"></script>
+    <span
+	style="visibility: hidden; display: inline-block;"
+	data-target-node-selector=".result-gh-61a898268d7cc717a6e9c07d"
+	data-gh-buy-now-button
+	data-gh-country-code="TR"
+	data-gh-mpn-code="HWD"
+	data-gh-ean-code=""
+	data-gh-configuration-id="61a898268d7cc717a6e9c07d"
+  >
+  Buy Now
+</span>
+<div class="result-gh-61a898268d7cc717a6e9c07d" data-gh-configuration-id="61a898268d7cc717a6e9c07d"></div>
+<script>
+(function (d, s, id) {
+  if (d.getElementById(id + s)) return;
+  var js, t = d.getElementsByTagName(s)[0];
+  js = d.createElement(s);
+  js.id = id + s;
+  js.onload = function() {HatchRequest.init()};
+  js.src = 'https://cdn.gethatch.com/hatch-buy-now-request-1.0.stable.js';
+  t.parentNode.insertBefore(js, t);
+}(document, 'script', 'hatch-buy-now-request-'));
+</script>
+
+    <!--
+        <script src="https://buybox.click/js/widget.min.js"></script>
     <div class="bb-widget" id="buybox-qphn" data-bb-id="15908" data-bb-oid="160620955" data-bb-language="en" data-bb-lead-color="#F80E0E" data-bb-name="Ellie Engineer_Test_1" data-bb-info="Her muhendisim diyenin okumasi gereken kitap." data-bb-p1="Param1_merhaba" data-bb-p2="Param2_nasilsin" data-bb-p3="Param3_iyi_misin"></div>
     <div class="bb-widget" id="buybox-femk" data-bb-id="15908" data-bb-oid="159297295" data-bb-language="en" data-bb-lead-color="#F01616"></div>
+    -->
     <!--Gorgias Chat Widget Start-->
     <script id="gorgias-chat-widget-install-v2"
         src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=12680"></script>
     <!--Gorgias Chat Widget End-->
-
+    
+    <script>
+        setTimeout(function(){ 
+          (function(n, j, c, h, a, t) {
+        d= j.createElement('div');
+        d.id= 'app';
+        t = j.getElementsByTagName('head')[0];
+        a = j.createElement('script');
+        a.async = 1;
+        a.id= 'ninjachat';
+        a.src = c + h;
+        a.onload = function(){
+            n._NC.init('1270486396819181','147','ap1')
+      };
+      j.lastChild.append(d);
+      t.appendChild(a);
+      })(window, document, 'https://widgets.500apps.com/ninjachat/', 'ninjachat.js');
+      },2000);
+      </script>
 </body>
 
 </html>
