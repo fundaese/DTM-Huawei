@@ -9,12 +9,58 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    
+        <!--Ematic-->
+        <!--
+      <script>
+        (function(i,s,o,g,r,a,m){i['EmaticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//api.ematicsolutions.com/v1/ematic.min.js','ematics');
+    
+        var opt = {
+            email: "<email of the user logged in if applicable>",
+            country_iso: "<country>",
+            currency_iso: "<currency>",
+            language_iso: "<language>"
+        }
+        
+        //initialize
+        ematics("create", ematicApikey, opt);
+    </script>
+    -->
+    <!--End of Ematic-->
+    
+    <!--Bytesmatter-->
+    <!--
+    <script>
+        window._perfWeb_ = {
+          key: 'c0874056-79bf-4185-adf8-e01165ad1114',
+        };
+        !function (e, t, r, n, s, u, a, o, d, i, c) {
+            (a = t.createElement("script")).async = 1, a.src = "https://www.bytesmatter.io/dashboard/beacon.min.js",
+              t.getElementsByTagName("script")[0].parentNode.insertBefore(a, null), r.errors = r.errors || [], e.addEventListener &&
+              (e.addEventListener("error", function (e) { r.errors.push(e) }), e.addEventListener("unhandledrejection", function (e) {
+                r.errors.push(e.reason)
+              })), o = r.async = [], c = function (e) {
+                o.push({url: e.currentTarget.responseURL,status: e.currentTarget.status || -2})
+              }, d = e.XMLHttpRequest, e.XMLHttpRequest = function (e) {
+                var t = new d;return t.addEventListener("loadend", e => { c(e) }), t.addEventListener("error", e => { c(e) }), t
+              }, i = e.fetch,
+              e.fetch = function () {
+                return i.apply(this, arguments).then(function (e) {
+                  return o.push({url: e.url,status: e.status || -2}), e
+                })
+              }
+          }(window, document, window._perfWeb_);
+      </script>
+      -->
+<!--Bytesmatter-->
 
 </head>
 
 <body>
     Mehmet Test Page
-
 
 
 </body>
