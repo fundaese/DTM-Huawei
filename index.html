@@ -22,5 +22,28 @@
     <!-- <script async src="https://serve.albacross.com/track.js"></script> -->
     <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
     
+
+    <script>
+        (function(c, l, u, d, o){
+            var ele = document.createElement('script');
+            m = document.getElementsByTagName('script')[0];
+            ele.async = 1;
+            ele.src = 'https://customer.cludo.com/scripts/bundles/sayt/0.9.6/sayt.bundle.js';
+            ele.onload = function() {
+                if (window.CludoSayt) {
+                    CludoSayt.initialize(c, l, u);
+                } else {
+                    console.log('An unexpected error occurred during SAYT initialization');
+                }
+            };
+            m.parentNode.insertBefore(ele, m);
+        })(
+            2966,
+            12724,
+            {
+                cludoSettings: {}
+            }
+        );
+        </script>
 </body>
 </html>
