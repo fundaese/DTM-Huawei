@@ -22,6 +22,37 @@
 
 <body>
     Funda page!!
+
+    <script>
+        (function(c, l, u, d, o){
+            var ele = document.createElement('script');
+            m = document.getElementsByTagName('script')[0];
+            ele.async = 1;
+            ele.src = 'https://customer.cludo.com/scripts/bundles/sayt/0.9.6/sayt.bundle.js';
+            ele.onload = function() {
+                if (window.CludoSayt) {
+                    CludoSayt.initialize(c, l, u);
+                } else {
+                    console.log('An unexpected error occurred during SAYT initialization');
+                }
+            };
+            m.parentNode.insertBefore(ele, m);
+        })(
+            2980,
+            12776,
+            {
+                cludoSettings: {
+                    searchUrl: 'https://dtmhuawei.com/',
+                    language: 'en',
+                    searchInputs: ['cludo-search-form'],
+                    template: 'InlineBasic',
+                    hideSearchFilters: true,
+                    focusOnResultsAfterSearch: true,
+                    type: 'inline'
+                }
+            }
+        );
+        </script>
 </body>
 
 </html>
