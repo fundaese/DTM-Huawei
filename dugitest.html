@@ -25,6 +25,24 @@
     
     </script>
     <link rel="icon" href="https://dtmhuawei.com/dugitest.html/favicon.ico" type="favicon-16x16.png" />
+    <form action="/action_page.php">
+        <fieldset>
+        <legend>Kayıt:</legend>
+        Adı:<br>
+        <input type="text" name="ad" ><br>
+        Soyadı:<br>
+        <input type="text" name="soyad" ><br><br>
+        <input type="submit" value="Gönder">
+        </fieldset>
+        </form>
+        <select name="duhan lıst">
+            <option value="web">Operation Valkery</option>
+            <option value="veri">Huaweı</option>
+            <option value="grafik">Verı Tabanı</option>
+            <option value="protem">Ip Adreslerı</option>
+            </select>
+            <input type="button" onclick="alert('www.dtmhuawei.com')" value="Eglence Baslasın!">
+            
 </head>
 <!--altta yazanlar sayfada yazili olan seylerdir renk ve kalin ince yazilar body kisminda-->
 <body>
@@ -53,5 +71,33 @@ document.getElementById("baslik").innerHTML="Let's coding";
 document.getElementById("deneme").innerHTML=23;
 
 </script>
+<h1>Bilgisayarın Şuanki Saati: <span id="zemin"> </span></h1>
+ 
+ 
+<!-- script kodlarını </body> etitekinden hemen önce yazmayı unutmayın --> 
+<script>
+var saatZemin = document.getElementById("zemin");
+ 
+ 
+function format(gelen) {
+var StrYap = gelen.toString();
+if (StrYap.length === 1) {
+return "0" + StrYap;
+} else {
+return StrYap;
+}
+}
+ 
+function saatGuncelle() {
+var dd = new Date();
+var hh = dd.getHours();
+var mm = dd.getMinutes();
+var ss = dd.getSeconds();
+saatZemin.textContent = format(hh) + ":" + format(mm) + ":" + format(ss);
+}
+ 
+setInterval(saatGuncelle, 1000);
+ 
+</script> 
 </body>
 </html>
