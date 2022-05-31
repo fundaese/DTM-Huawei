@@ -2,17 +2,12 @@
 <html>
 
 <head>
-
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>IP adresiniz kopyalaniyor....</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>   
-    <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\d84235326\Desktop\DTM\dtmgithub\dtmhuawei.github.io/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\d84235326\Desktop\DTM\dtmgithub\dtmhuawei.github.io/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\d84235326\Desktop\DTM\dtmgithub\dtmhuawei.github.io/favicon-16x16.png">
-    <link rel="manifest" href="C:\Users\d84235326\Desktop\DTM\dtmgithub\dtmhuawei.github.io/site.webmanifest">
     <script>
         alert("IP adresiniz kontrol ediliyor...")
         </script>
@@ -125,7 +120,7 @@ body {
     /* Button used to open the chat form - fixed at the bottom of the page */
     .open-button {
       background-color: #555;
-      color: white;
+      color: rgb(121, 77, 155);
       padding: 16px 20px;
       border: none;
       cursor: pointer;
@@ -192,13 +187,53 @@ body {
       opacity: 1;
     }
     </style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
 </head>
-<!--altta yazanlar sayfada yazili olan seylerdir renk ve kalin ince yazilar body kisminda-->
+<!--Bundan sonra body de calisan scriptler var-->
 <body>
   <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\d84235326\Desktop\DTM\dtmgithub\dtmhuawei.github.io/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\d84235326\Desktop\DTM\dtmgithub\dtmhuawei.github.io/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\d84235326\Desktop\DTM\dtmgithub\dtmhuawei.github.io/favicon-16x16.png">
-    <link rel="manifest" href="C:\Users\d84235326\Desktop\DTM\dtmgithub\dtmhuawei.github.io/site.webmanifest">
     <button type="button" onclick="changecolor('red')">red</button>
  
 <button type="button" onclick="changecolor('yellow')">yellow</button>
@@ -226,8 +261,6 @@ document.getElementById("deneme").innerHTML=34;
 </script>
 <h1>Istanbul: <span id="zemin"> </span></h1>
  
- 
-<!-- script kodlarını </body> etitekinden hemen önce yazmayı unutmayın --> 
 <script>
 var saatZemin = document.getElementById("zemin");
  
@@ -275,6 +308,29 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<div class="content">
+  <h1>Yagmur</h1>
+  <p>Yagmurdan kacmak huzurdan kacmaktir</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 </body>
 </html>
-<div class="loader"></div>
+<div class="loader"></div>a
