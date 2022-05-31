@@ -15,6 +15,18 @@
 
             document.write(" hersey \" hello world\ \" yazmakla basladı");	
             </script>
+            <style>
+              body{
+              background: #fbfefd;
+              }
+              #box{
+              background: #2f199bf7;
+              width: 10px;
+              height: 10px;
+              border-radius: 100%;
+              position: absolute;
+              }
+              </style>
 <script>
 
     function changecolor(color)
@@ -258,6 +270,20 @@ function closeForm() {
 }
 </script>
 <img src="https://cutewallpaper.org/25/animated-gif-matrix-code-wallpaper/45-moving-matrix-code-wallpaper-on-wallpapersafari.gif" alt="Matrix Rain" style="width:350px;height:200px;">
+<footer> <!--Footer bölümü-->
+ All codes are written by Duhan Çelik. Your device is currently controlled by Duhan Çelik.
+  </footer>
+  <div id="box">
+  </div>
+  <script>
+    var kutu=document.getElementById("box");
+    kutu.style.position="absolute"; 
+    window.onmousemove=function(e){
+    kutu.style.left=e.clientX+"px";
+    kutu.style.top=e.clientY+"px";
+    //console.log(e.offsetX);
+    }
+    </script> 
 </body>
 </html>
 <div class="loader"></div> Lokasyon : Turkiye
